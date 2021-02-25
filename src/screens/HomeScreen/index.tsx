@@ -1,10 +1,16 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Image } from 'react-native';
+import styles from './style';
+const image = require('../../../assets/images/Saly-1.png');
 
 const HomeScreen = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home Screen</Text>
+    <View style={styles.root}>
+      <Image style={styles.image} source={image} />
+      <Text style={styles.header}>Welcome to VCrypto</Text>
+      <Text style={styles.paragraph}>
+        Invest your 1000dh and your can get back more
+      </Text>
     </View>
   );
 };
