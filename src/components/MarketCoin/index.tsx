@@ -4,11 +4,11 @@ import styles from './styles';
 
 export interface MarketCoinProps {
   marketCoin: {
-    name: String;
-    image: String;
-    symbol: String;
-    valueChange24H: Number;
-    valueDH?: Number;
+    name: string;
+    image: string;
+    symbol: string;
+    valueChange24H: number;
+    valueDH?: number;
   };
 }
 
