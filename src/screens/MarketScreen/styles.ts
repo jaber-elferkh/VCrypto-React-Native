@@ -20,9 +20,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   label: {
-    fontSize: 15,
-    // fontWeight: 'bold',
-    color: '#777777',
+    fontSize: 20,
+    fontWeight: 'bold',
+    // color: '#777777',
   },
   balance: {
     fontSize: 36,

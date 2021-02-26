@@ -13,9 +13,9 @@ import useColorScheme from '../hooks/useColorScheme';
 import { BottomTabParamList } from '../../types';
 import HomeScreen from '../screens/HomeScreen';
 import PortfolioScreen from '../screens/PortfolioScreen';
-import MarketScreen from '../screens/MarketScrees';
 import RankingScreen from '../screens/RankingScreen';
 import ProfileScreen from '../screens/ProfileScreen';
+import MarketScreen from '../screens/MarketScreen';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
