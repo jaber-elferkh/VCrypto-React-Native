@@ -8,6 +8,7 @@ import * as React from 'react';
 import { ColorSchemeName } from 'react-native';
 import { RootStackParamList } from '../../types';
 import CoinDetailsScreen from '../screens/CoinDetailsScreen';
+import CoinExchangeScreen from '../screens/CoinExchangeScreen';
 
 import NotFoundScreen from '../screens/NotFoundScreen';
 import BottomTabNavigator from './BottomTabNavigator';
@@ -38,11 +39,19 @@ function RootNavigator() {
         name="Root"
         component={BottomTabNavigator}
       />
+
       <Stack.Screen
         options={{ title: 'Price Data' }}
         name="CoinDetails"
         component={CoinDetailsScreen}
       />
+
+      <Stack.Screen
+        options={{ title: 'Coin Exchange' }}
+        name="CoinExchange"
+        component={CoinExchangeScreen}
+      />
+
       <Stack.Screen
         name="NotFound"
         component={NotFoundScreen}

@@ -1,4 +1,5 @@
 import { AntDesign } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 import React, { useState } from 'react';
 import { View, Text, Image, Pressable } from 'react-native';
 import CoinPriceGraph from '../../components/CoinPriceGraph';
@@ -187,11 +188,18 @@ const CoinDetailsScreen = () => {
     valueChange1H: -1.12,
     valueChange1D: 3.12,
     valueChange7D: -5.12,
-    amount: 15,
+    amount: 3,
   });
 
-  const onBuy = () => {};
-  const onSell = () => {};
+  const navigation = useNavigation();
+
+  const onBuy = () => {
+    navigation.navigate('CoinExchange', { isBuy: true, coinData });
+  };
+
+  const onSell = () => {
+    navigation.navigate('CoinExchange', { isBuy: false, coinData });
+  };
 
   return (
     <View style={styles.root}>
