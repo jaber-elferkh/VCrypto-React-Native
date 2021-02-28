@@ -2,6 +2,8 @@ import React from 'react';
 import { View, Text, Image } from 'react-native';
 import styles from './styles';
 
+const image = require('../../../assets/images/Saly-20.png');
+
 export interface RankingUserProps {
   rankingUser: {
     name: string;

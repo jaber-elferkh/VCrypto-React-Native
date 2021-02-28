@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
+import PercentageChange from '../PercentageChange';
 import styles from './styles';
 
 export interface MarketCoinProps {
@@ -27,10 +28,11 @@ const MarketCoin = (props: MarketCoinProps) => {
       </View>
       <View style={{ alignItems: 'flex-end' }}>
         <Text style={styles.value}>{valueDH} dhs</Text>
-        <Text style={{ color: valueChange24H > 0 ? 'green' : 'red' }}>
+        <PercentageChange value={valueChange24H} />
+        {/* <Text style={{ color: valueChange24H > 0 ? 'green' : 'red' }}>
           {valueChange24H > 0 && '+'}
           {valueChange24H}
-        </Text>
+        </Text> */}
       </View>
     </View>
   );
