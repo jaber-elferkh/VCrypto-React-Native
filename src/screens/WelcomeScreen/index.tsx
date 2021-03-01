@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { View, Text, Image, Pressable } from 'react-native';
 import styles from './style';
@@ -5,7 +6,10 @@ const image = require('../../../assets/images/Saly-1.png');
 const googleButton = require('../../../assets/images/google-Button.png');
 
 const WelcomeScreen = () => {
-  const signInGoogle = () => {};
+  const navigation = useNavigation();
+  const signInGoogle = () => {
+    navigation.navigate('Root');
+  };
 
   return (
     <View style={styles.root}>
